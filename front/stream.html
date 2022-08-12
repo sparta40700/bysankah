@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sankah Slot</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link sizes="16x16" href="img/sankah.jpg" rel="icon" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo_navbar">
+          <img src="img/sankah.jpg" alt="logo" />
+        </div>
+        <ul class="navigation">
+          <li class="">
+            <a class="News" href="/news">News</a>
+          </li>
+          <li class="">
+            <a class="Casino" href="/casino">Casino</a>
+          </li>
+          <li class="">
+            <a class="Stream" href="/stream">Stream </a>
+          </li>
+          <li class="">
+            <a class="Slot" href="/slots">Slots</a>
+          </li>
+          <li class="">
+            <a class="video" href="/videos">Videos</a>
+          </li>
+          <li class="">
+            <a class="Store" href="/store">Store</a>
+          </li>
+          <li class="">
+            <a class="Giveaway" href="/giveaway">Giveaway</a>
+          </li>
+          <li class="">
+            <a class="About" href="/about">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="acceuil">
+      <!-- Add a placeholder for the Twitch embed -->
+      <div id="twitch-embed" class="text-center"></div>
+
+      <!-- Load the Twitch embed script -->
+      <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+      <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+      <script type="text/javascript">
+        new Twitch.Player("twitch-embed", {
+          channel: "bysankah",
+          width: "80%",
+          height: "660px",
+        });
+      </script>
+    </div>
+  </body>
+</html>
